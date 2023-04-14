@@ -4,22 +4,22 @@ function About() {
   const [currentTab, setCurrentTab] = useState("1");
   return (
     <div className="w-full flex flex justify-center">
-      <div className="w-10/12	flex flex-col items-center">
+      <div className="desktop:w-10/12 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
       <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           HOW IT WORKS
         </h1>
         <div className="flex w-full my-20">
-          <div className="desktop:w-1/2 w-full tabanddesk:mr-10">
+          <div className="desktop:w-1/2 tablet:w-1/2 w-full tabanddesk:mr-10">
             <div
               onMouseOver={() => setCurrentTab("1")}
-              className={`transition-all duration-200 flex items-center py-5 px-5 tababdedesk:mr-16 ${
+              className={`transition-all duration-200 w-full flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "1"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : "bg-white"
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola text-2xl font-semibold rounded-full bg-grey-bg w-14 h-14 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg w-14 h-14 flex items-center justify-center
                 ${
                   currentTab === "1"
                     ? "bg-primary-color text-white"
@@ -30,7 +30,7 @@ function About() {
                 01
               </h1>
               <div className="ml-6">
-                <h1 className="font-gola text-size28 font-semibold">
+                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Fill the application
                 </h1>
                 <h1 className="font-gola text-base font-light">
@@ -47,7 +47,7 @@ function About() {
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola text-2xl font-semibold rounded-full bg-grey-bg w-14 h-14 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl  font-semibold rounded-full bg-grey-bg tabanddesk:w-14 h-14 mobile:w-20 flex items-center justify-center
                 ${
                   currentTab === "2"
                     ? "bg-primary-color text-white"
@@ -58,7 +58,7 @@ function About() {
                 02
               </h1>
               <div className="ml-6">
-              <h1 className="font-gola text-size28 font-semibold">
+              <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Let the banks bid
                 </h1>
                 <h1 className="font-gola text-base font-light">
@@ -75,7 +75,7 @@ function About() {
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola text-2xl font-semibold rounded-full bg-grey-bg w-14 h-14 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl  font-semibold rounded-full bg-grey-bg tabanddesk:w-14 h-14 mobile:w-20 flex items-center justify-center
                 ${
                   currentTab === "3"
                     ? "bg-primary-color text-white"
@@ -86,7 +86,7 @@ function About() {
                 03
               </h1>
               <div className="ml-6">
-              <h1 className="font-gola text-size28 font-semibold">
+              <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Accept a bid
                 </h1>
                 <h1 className="font-gola text-base font-light">
@@ -95,7 +95,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="desktop:w-1/2 tabanddesk:block mobile:hidden">
+          <div className="desktop:w-1/2 tablet:w-1/2 tabanddesk:block mobile:hidden">
             <img
               className="transition-all duration-200"
               src={`${currentTab === "1" ? "./tab1.png" : "./tab2.png"}`}

@@ -92,7 +92,7 @@ function Header() {
           <h1 className="tabanddesk:pr-10 tablet:text-4xl mobile:text-4xl tablet:leading-relaxed desktop:lineheight67 desktop:text-size56 font-gola font-bold">
             We make finding a bank loan to fund your study overseas easier
           </h1>
-          <div className="tabanddesk:hidden mt-10 flex item-center">
+          <div className="tabanddesk:hidden mt-10 w-full flex item-start justify-start">
             <button
               type="button"
               className="h-10 mr-5 font-gola text-button-text hover:text-black border border-border-color focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
