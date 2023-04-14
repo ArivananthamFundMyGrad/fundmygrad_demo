@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="w-full flex flex justify-center">
       <div className="desktop:w-10/12 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
-      <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
+        <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           HOW IT WORKS
         </h1>
         <div className="flex w-full my-20">
@@ -19,13 +19,14 @@ function About() {
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg w-14 h-14 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "1"
                     ? "bg-primary-color text-white"
                     : "bg-grey-bg text-black"
                 }
                 `}
+                style={{ minWidth: "55px", height: "55px" }}
               >
                 01
               </h1>
@@ -47,18 +48,19 @@ function About() {
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl  font-semibold rounded-full bg-grey-bg tabanddesk:w-14 h-14 mobile:w-20 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "2"
                     ? "bg-primary-color text-white"
                     : "bg-grey-bg text-black"
                 }
                 `}
+                style={{ minWidth: "55px", height: "55px" }}
               >
                 02
               </h1>
               <div className="ml-6">
-              <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Let the banks bid
                 </h1>
                 <h1 className="font-gola text-base font-light">
@@ -75,18 +77,19 @@ function About() {
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl  font-semibold rounded-full bg-grey-bg tabanddesk:w-14 h-14 mobile:w-20 flex items-center justify-center
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "3"
                     ? "bg-primary-color text-white"
                     : "bg-grey-bg text-black"
                 }
                 `}
+                style={{ minWidth: "55px", height: "55px" }}
               >
                 03
               </h1>
               <div className="ml-6">
-              <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Accept a bid
                 </h1>
                 <h1 className="font-gola text-base font-light">
