@@ -30,8 +30,8 @@ module.exports = {
       screens: {
         mobile: { min: "320px", max: "767px" },
         tablet: { min: "768px", max: "1023px" },
-        desktop: { min: "1024px", max: "1800px" },
-        tabanddesk: { min: "768px", max: "1535px" },
+        desktop: { min: "1024px"},
+        tabanddesk: { min: "768px"},
       },
       lineHeight: {
         lineheight67: "67px",
