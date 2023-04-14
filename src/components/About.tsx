@@ -9,10 +9,10 @@ function About() {
           HOW IT WORKS
         </h1>
         <div className="flex w-full my-20">
-          <div className="w-1/2">
+          <div className="desktop:w-1/2 w-full tabanddesk:mr-10">
             <div
               onMouseOver={() => setCurrentTab("1")}
-              className={`transition-all duration-200 flex items-center py-5 px-5 mr-16 ${
+              className={`transition-all duration-200 flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "1"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : "bg-white"
@@ -40,7 +40,7 @@ function About() {
             </div>
             <div
               onMouseOver={() => setCurrentTab("2")}
-              className={`transition-all duration-200 flex items-center py-5 px-5 mr-16 ${
+              className={`transition-all duration-200 flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "2"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : "bg-white"
@@ -68,7 +68,7 @@ function About() {
             </div>
             <div
               onMouseOver={() => setCurrentTab("3")}
-              className={`transition-all duration-200 flex items-center py-5 px-5 mr-16 ${
+              className={`transition-all duration-200 flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "3"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : "bg-white"
@@ -95,7 +95,7 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="desktop:w-1/2 tabanddesk:block mobile:hidden">
             <img
               className="transition-all duration-200"
               src={`${currentTab === "1" ? "./tab1.png" : "./tab2.png"}`}

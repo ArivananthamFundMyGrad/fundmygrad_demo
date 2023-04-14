@@ -9,13 +9,13 @@ module.exports = {
     extend: {
       colors: {
         "primary-color": "#0057E4",
-        "tab-color":"#F9FCFF",
+        "tab-color": "#F9FCFF",
         "light-color": "#EBF3FF",
         "border-color": "#595959",
         "button-text": "#2F2F2F",
-        "grey-bg":"#F0F0F0",
-        "tab-border-color":"#8FAEFF",
-        "footer-color":"#5B749C"
+        "grey-bg": "#F0F0F0",
+        "tab-border-color": "#8FAEFF",
+        "footer-color": "#5B749C",
       },
       borderRadius: {
         lg: "10px",
@@ -23,9 +23,22 @@ module.exports = {
       fontFamily: {
         gola: ["Golos Text", "sans-serif"],
       },
-      fontSize:{
-        size28:"28px"
-      }
+      fontSize: {
+        size28: "28px",
+        size56: "56px",
+      },
+      screens: {
+        mobile: { min: "320px", max: "767px" },
+        tablet: { min: "768px", max: "1023px" },
+        desktop: { min: "1024px", max: "1535px" },
+        tabanddesk: { min: "768px", max: "1535px" },
+      },
+      lineHeight: {
+        lineheight67: "67px",
+      },
+      width: {
+        width95: "90%",
+      },
     },
   },
   plugins: [],

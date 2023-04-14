@@ -3,24 +3,27 @@ import React from "react";
 function Footer() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="w-10/12	flex justify-between py-12">
+      <div className="tabanddesk:w-10/12 mobile:w-11/12 flex mobile:flex-col tabanddesk:justify-between py-12">
         <img
-          style={{ height: "25px" }}
+          className="mobile:w-3/4 tabanddesk:h-8"
           src="./footerlogo.png"
           alt="Footer Logo"
         />
-        <div className="flex items-center">
-          <img
-            style={{ width: "24px", height: "20px" }}
-            src="./twitter.png"
-            alt="Twitter Icon"
-          />
-          <img
-            className="ml-8"
-            style={{ width: "20px", height: "20px" }}
-            src="./linkedin.png"
-            alt="Linkedin Icon"
-          />
+        <div className="flex items-center mobile:justify-between mobile:mt-5">
+          <div className="flex">
+            <img
+              style={{ width: "24px", height: "20px" }}
+              src="./twitter.png"
+              alt="Twitter Icon"
+            />
+            <img
+              className="tabanddesk:ml-8 mobile:ml-4"
+              style={{ width: "20px", height: "20px" }}
+              src="./linkedin.png"
+              alt="Linkedin Icon"
+            />
+          </div>
+
           <div className="ml-8">
             <h1 className="font-golo text-footer-color text-base font-medium">
               contact@fundmygrad.com
